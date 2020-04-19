@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/catmenu"
+        android:title="Menu"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <item
+                android:id="@+id/catedit"
+                android:title="Edit" />
+            <item
+                android:id="@+id/catdelete"
+                android:title="Delete" />
+            <item
+                android:id="@+id/catlist"
+                android:title="show list" />
+
+
+        </menu>
+    </item>
+</menu>

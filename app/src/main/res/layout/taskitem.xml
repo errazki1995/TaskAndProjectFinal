@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/lbltaskName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_alignParentLeft="true"
+        android:text="Task Name" />
+    <TextView
+        android:id="@+id/lbltasknumber"
+        android:layout_marginLeft="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="0sp"
+        android:layout_alignParentLeft="true"
+        android:text="Task: #1" />
+
+
+    <TextView
+        android:id="@+id/lblstatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="255dp"
+        android:textSize="10sp"
+        android:layout_toRightOf="@id/lbltasknumber"
+
+        android:text="status :20%" />
+
+    <TextView
+        android:id="@+id/lbltaskDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/lbltaskName"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="42dp"
+        android:layout_marginBottom="-35dp"
+        android:text="Description" />
+    <ImageButton
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+
+        android:layout_alignRight="@id/lbltaskDescription"
+        app:srcCompat="@drawable/emptystar" />
+
+    <LinearLayout
+        android:layout_width="208dp"
+        android:layout_height="wrap_content">
+
+        <!--  <Button
+            android:id="@+id/btnNewsubtask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/lbltaskName"
+            android:layout_alignParentRight="false"
+            android:layout_marginTop="60dp"
+
+            android:text="new subtask"
+            android:textSize="10sp" />-->
+
+
+        <ImageButton
+            android:id="@+id/btnNewsubtask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/lbltaskName"
+
+            android:layout_alignParentRight="false"
+            android:layout_marginTop="60dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_add_circle_black_24dp" />
+        <!--  <Button
+            android:id="@+id/btnEditsubtask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/lbltaskName"
+            android:layout_marginTop="60dp"
+            android:text="edit"
+            android:textSize="10sp" />-->
+        <ImageButton
+            android:id="@+id/btnEditsubtask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/lbltaskName"
+            android:layout_alignParentRight="false"
+            android:layout_marginTop="60dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_create_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/btnListsubtasks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/lbltaskName"
+            android:layout_marginTop="60dp"
+            app:srcCompat="@drawable/ic_list_black_24dp" />
+
+
+
+        <!-- <Button
+             android:id="@+id/btnListsubtasks"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignBottom="@id/lbltaskName"
+             android:layout_marginTop="60dp"
+             android:text="view subtasks"
+             android:textSize="10sp" />-->
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

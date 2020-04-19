@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewTask">
+
+    <TextView
+        android:id="@+id/lblnewtask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110sp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="4dp"
+        android:text="New Task or subTask"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/lblnewtask"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="-149dp"
+        android:text="Task Name:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="63dp"
+        android:layout_marginBottom="365dp"
+        android:ems="10"
+        android:text="Description:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="91dp"
+        android:text="Start date:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="-57dp"
+        android:text="End date:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="228dp"
+        android:text="Priority:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="280sp"
+        android:text="Difficulty:"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/txtTaskName"
+        android:layout_width="500sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="60dp"
+
+        android:layout_marginRight="64dp"
+        android:layout_marginBottom="499dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/txtstartDate"
+        android:layout_width="500sp"
+        android:layout_height="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="449dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/txtEndDate"
+        android:layout_width="500sp"
+        android:layout_height="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="392dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/txtTaskDescription"
+        android:layout_width="400dp"
+        android:layout_height="68dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="63dp"
+        android:layout_marginBottom="320dp"
+        android:ems="10"
+        android:inputType="textPersonName|textImeMultiLine"
+        android:textSize="12sp" />
+
+    <Spinner
+        android:id="@+id/priorityList"
+        android:layout_width="200dp"
+        android:layout_height="26dp"
+        android:layout_marginBottom="228dp"
+        android:layout_alignBottom="@id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginEnd="24dp"
+        />
+
+    <Spinner
+        android:id="@+id/difficultyList"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="93dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginBottom="280dp" />
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:text="New Task" />
+
+
+    <Button
+        android:id="@+id/tbnAttach"
+        android:layout_width="96dp"
+        android:layout_height="82dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="69dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="73dp"
+        android:text="Attach" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="96dp"
+        android:layout_height="82dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="73dp"
+        android:background="@drawable/loc"
+        android:scaleType="fitXY" />
+
+</RelativeLayout>
+

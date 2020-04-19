@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@drawable/bgitemdoes"
+    android:layout_marginBottom="20dp"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/sideelement"
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/elementsideblue"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="210dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/setdone"
+            android:layout_marginTop="19dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/lbltaskName"
+            android:layout_marginTop="19dp"
+            android:layout_marginStart="9dp"
+            android:textSize="19sp"
+            android:textColor="#000C5D"
+            android:text="Buy a new laptop"
+            android:layout_marginBottom="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/lbltaskDescription"
+            android:textSize="18sp"
+            android:textColor="#ADADAD"
+            android:textStyle="bold"
+            android:text="Nearly market good to"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/datedoes"
+            android:textSize="18sp"
+            android:textColor="#F63EA5"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:text="Tomorrow"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/imgviewMore"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/more" />
+    </LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bgitemdoes"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="109dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lbltaskName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:text="Buy whiskas"
+                android:textColor="#000C5D"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/lbltaskDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Nearly market good to"
+                android:textColor="#ADADAD"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/datedoes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+
+                android:layout_marginTop="8dp"
+                android:text="Tomorrow"
+                android:textAlignment="center"
+                android:textColor="#F63EA5"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>-->

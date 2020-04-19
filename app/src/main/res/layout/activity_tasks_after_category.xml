@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TasksAfterCategory">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            <Button
+                android:id="@+id/backhomecategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="back home"/>
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+
+                android:background="@drawable/categoryicon"/>
+
+            <TextView
+                android:id="@+id/introcat"
+                android:layout_width="300sp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4sp"
+                android:background="@drawable/backgroundtextradius"
+                android:fontFamily="serif-monospace"
+                android:text="iT"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="50dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <ListView
+            android:id="@+id/tasklistcat"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/notaskslistcat"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_marginTop="100sp"
+            android:textAlignment="center"
+            android:textSize="50dp"
+            android:background="@drawable/backgroundtext"
+            android:textColor="@color/bluelighted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This list has no tasks"/>
+        <include layout="@layout/content_tasks_list" />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tint="@color/white"
+        android:background="@color/white"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/ic_add_circle_black_24dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

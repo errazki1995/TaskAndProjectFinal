@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item android:id="@+id/menu"
+    android:title="Menu"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item
+            android:id="@+id/itemhuhadd"
+            android:title="Add a subtask" />
+        <item
+            android:id="@+id/itemhuhdelete"
+            android:title="Delete" />
+        <item
+            android:id="@+id/itemhuhlistsubtask"
+            android:title="Show subtasks" />
+        <item
+            android:id="@+id/itemhuhedit"
+            android:title="Edit this task" />
+
+        <item
+            android:id="@+id/itemhuhview"
+            android:title="View more" />
+        <item
+            android:id="@+id/itemhuhmovetolist"
+            android:title="Move to another list" />
+
+        <item
+            android:id="@+id/itemhuhsettimer"
+            android:title="Set timer" />
+    </menu>
+</item>
+</menu>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+        <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/bluelighted"
+            android:textSize="40sp"
+    android:text="Gantt preview"></TextView>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5sp"
+                    android:layout_marginTop="12sp"
+                    android:background="@drawable/ic_warning_black_24dp"/>
+                <TextView
+                    android:layout_marginStart="5sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/graylighted"
+                    android:textSize="25sp"
+                    android:text="(rotate your phone for a better visibility)"></TextView>
+        </LinearLayout>
+        <GridLayout
+            android:id="@+id/ganttgrid"
+            android:columnCount="7"
+
+            android:layout_marginTop="20dp"
+            android:rowCount="4"
+            android:alignmentMode="alignBounds"
+            android:columnOrderPreserved="false"
+            android:layout_width="wrap_content"
+            android:useDefaultMargins="true"
+            android:layout_height="wrap_content"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+            <!--
+            <TextView android:layout_height="20sp"
+                android:layout_width="20sp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+        />
+          <TextView android:layout_height="14sp"
+                android:layout_width="14sp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                />
+
+            <TextView android:layout_height="14sp"
+                android:layout_width="14sp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                />
+
+            <TextView android:layout_height="14sp"
+                android:layout_width="14sp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                />
+
+        -->
+
+        </GridLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</HorizontalScrollView>

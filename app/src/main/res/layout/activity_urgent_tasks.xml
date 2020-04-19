@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".UrgentTasks"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@drawable/bluestar"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Urgent Tasks"
+                android:background="@drawable/backgroundtext"
+                android:fontFamily="serif-monospace"
+                android:textSize="50dp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/urgentlist"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/notasks"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_marginTop="100sp"
+            android:textAlignment="center"
+            android:textSize="50dp"
+            android:textColor="@color/bluelighted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No urgent tasks"/>
+
+    </LinearLayout>
+
+    <!-- <include layout="@layout/content_tasks_list" />-->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
